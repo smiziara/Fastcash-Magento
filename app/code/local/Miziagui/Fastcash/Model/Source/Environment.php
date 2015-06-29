@@ -1,0 +1,1 @@
+<?phpclass Miziagui_Fastcash_Model_Source_Environment{    public function toOptionArray()    {        return array(            array('value'=>'1', 'label'=>Mage::helper('fastcash')->__('Produção')),            array('value'=>'0', 'label'=>Mage::helper('fastcash')->__('Homologação')),        );    }}

@@ -1,0 +1,11 @@
+<?php $helper = $this->loadData(); ?>
+<?php //$this->getOrder(); ?>
+<?php $config = $helper->getConfigAuth(); ?>
+
+<div class="page-title">
+    <h1>Comfirmar Pagamento</h1>
+</div>
+
+<iframe id="iframe-fastcash" 
+    src="https://www.fastcash.com.br/paymentframe/2/?Tid=<?php echo $helper->getTID() ?>&Pid=<?php echo $config->getPid() ?>&ProdId=<?php echo $config->getProdid() ?>&Price=<?php echo $helper->getPrice() ?>&Description=<?php echo $helper->getProductName() ?>&Cellphone=<?php echo $helper->getCellphone() ?>&Name=<?php echo $helper->getCustomerName() ?>&Email=<?php echo $helper->getCustomerEmail() ?>&CPF=<?php echo $helper->getCustomerCpf() ?>&OperationType=checkout&<?php echo $helper->getMethods() ?>&CompanyName=<?php echo $config->getCompanyName() ?>&HideCompanyName=false&ShowValue=true&ShowDescription=true&HideLogo=true&Balance=0&SetParcelado=false&MaxParcela=1&FixParcela=0&CreditCard=false">
+</iframe>

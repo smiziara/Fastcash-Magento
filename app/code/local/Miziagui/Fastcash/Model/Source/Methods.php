@@ -1,0 +1,1 @@
+<?phpclass Miziagui_Fastcash_Model_Source_Methods {    public function toOptionArray() {        return array(            array('value'=>'deposit', 'label'=>Mage::helper('fastcash')->__('Depósito')),            array('value'=>'transference', 'label'=>Mage::helper('fastcash')->__('Transferência')),        );    }}

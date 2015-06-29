@@ -1,0 +1,159 @@
+#fastcash_form_confirm{
+    width: 323px;
+    height: 520px;
+    float: left; 
+    font-family: Raleway;
+}
+
+.fastash-confirm-image{
+    float:right;
+}
+
+.payment-option-fastcash_deposito{
+    height: 47px;
+    padding: 3px;
+}
+
+.payment-option-fastcash_deposito input{
+    display:none;
+}
+
+.payment-option-fastcash_transferencia{
+    height: 32px;
+    padding: 3px;
+}
+.payment-option-fastcash_deposito{
+    height: 32px;
+    padding: 3px;
+}
+.payment-option-fastcash_transferencia input{
+    display:block;
+    margin: 0px auto 3px auto;
+    position: absolute;
+    left:-9999px;
+}
+.payment-option-fastcash_deposito input{
+    display:block;
+    margin: 0px auto 3px auto;
+    position: absolute;
+    left:-9999px;
+}
+.payment-option-fastcash_transferencia label{
+	cursor: pointer;
+}
+.payment-option-fastcash_deposito label{
+	cursor: pointer;
+}
+
+.payment-option-fastcash_deposito img{width: 30px;}
+.payment-option-fastcash_transferencia img{width: 30px;}
+
+.payment-methods dt label[for='p_method_fastcash_deposito'] {
+     padding-left: 28px;
+     background: url(../fastcash/images/ico_dep.png) left top no-repeat;
+}
+.payment-methods dt label[for='p_method_fastcash_transferencia'] {
+     padding-left: 28px;
+     background: url(../fastcash/images/ico_trans.png) left top no-repeat;
+}
+#container_payment_method_fastcash_transferencia{
+    margin: 7px 0px 7px 0;
+    border-bottom: 1px dotted #DEDEDE;
+    padding-bottom: 15px;
+}
+
+.payment-methods .separator{
+    background: url(../images/fastcash/separator.png) center no-repeat;
+    list-style: none !important;
+    margin-top: -5px !important;
+    padding-top: 0 !important;
+    width: 227px !important;
+    float: left;
+}
+.payment-methods .separator img{
+overflow: hidden;
+}
+.payment-methods .info-deposito{
+    font-size: 11px;
+    margin-right: 30px;
+    position: relative;
+    left: -3px;
+}
+.payment-methods .info-deposito li{
+    list-style: url(../images/fastcash/list-deposito.png) outside;
+    float: left;
+}
+
+.payment-methods dt {margin: 12px 0px 7px 0;}
+
+
+.payment-methods .information-list-style li{
+    list-style: url(../images/fastcash/list-deposito.png) outside;
+    margin-left: 4px;
+}
+
+.payment-methods .information:hover .information-content{
+    display: block;  
+}
+
+.payment-methods .information-content.deposito{
+    margin-top: -504px;
+    width: 280px;
+}
+.payment-methods .information-content.transferencia{
+    margin-top: -368px !important;
+    width: 280px;
+}
+#container_payment_method_fastcash_transferencia .form-list .input-box {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}   
+
+#fastcash_transferencia_transferencia_type_cvv_div input.input-text{ width: 60px; }
+#payment_form_fastcash_transferencia .validate-transferencia-number{ width: 190px; }
+#payment_form_fastcash_transferencia .transferencia_owner { width: 190px; }
+
+#container_payment_method_fastcash_deposito{
+    margin: 7px 0px 7px 0;
+    border-bottom: 1px dotted #DEDEDE;
+    padding-bottom: 15px;
+}
+#container_payment_method_fastcash_transferencia{
+    margin: 7px 0px 7px 0;
+    border-bottom: 1px dotted #DEDEDE;
+    padding-bottom: 15px;
+}
+.payment-option-fastcash_deposito .validation-advice{
+    width: 300px;
+    margin-right: -250px;
+    top: 710px;
+    position: absolute;    
+}
+.payment-option-fastcash_transferencia .validation-advice{
+    width: 300px;
+    margin-right: -250px;
+    top: 765px;
+    position: absolute;    
+}
+
+.fastcash-type-active{background-color:#ccc;}
+.fastcash-confirm-index #fastcash_form_confirm table td{font-size: 15px;padding-bottom:5px;}
+.fastcash-confirm-index .confirm-td{text-align: center;margin-bottom: 20px;}
+.fastcash-confirm-index .my-account input{width:150px;}
+
+.fastcash-info-success{list-style-type:disc;padding-left:15px;margin-bottom: 10px;line-height: 20px;}
+
+
+
+
+
+
+#iframe-fastcash{
+    border:0;
+    height: 610px;
+    width: 570px;
+}
+
+#iframe-fastcash body{
+    padding-top:0px !important;
+}

@@ -1,0 +1,51 @@
+<br/>
+<br/>
+<br/>
+
+<?php $fastcashOrders = $this->getOrders() ?>
+<div class="page-title">
+    <h2>Pedidos Fastcash</h2>
+</div>
+
+<?php if(Mage::app()->getRequest()->getParam('r')): ?>
+    <h3>Obrigado por informar os dados de pagamento!</h3>
+    <h4>Em breve você receberá uma confirmação de pagamento da Fastcash.</h4>        
+<?php endif ?>
+
+<?php if( sizeof($fastcashOrders->getItems()) > 0 ): ?>
+<table class="data-table" id="my-orders-table">
+    <col width="1" />
+    <col width="1" />
+    <col />
+    <col width="1" />
+    <col width="1" />
+    <col width="1" />
+        <thead>
+            <tr>
+                <th><?php echo $this->__('Order #') ?></th>
+                <th><?php echo $this->__('Date') ?></th>
+                <th><?php echo $this->__('Ship To') ?></th>
+                <th><span class="nobr"><?php echo $this->__('Order Total') ?></span></th>
+                <th><?php echo $this->__('Status') ?></th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($fastcashOrders as $_order): ?>
+                <tr>
+                    <td><?php echo $_order->getIncrementId() ?></td>
+                    <td><span class="nobr"><?php echo $this->formatDate($_order->getCreatedAt()) ?></span></td>
+                    <td><?php echo $this->htmlEscape($_order->getCustomerFirstname().' '.$_order->getCustomerLastname()) ?></td>
+                    <td><?php echo 'R$ '.number_format($_order->getBaseGrandTotal(),2,',','') ?></td>
+                    <td><em><?php echo 'Aguardando Identificação' ?></em></td>
+                    <td class="a-center">
+                        <a href="<?php echo $this->getUrl('fastcash/confirm/index/fcorder/'.$_order->getOrderId()) ?>">Identificar</a>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+    <script type="text/javascript">decorateTable('my-orders-table')</script>
+<?php else: ?>
+    <p>Você não tem pedidos do fastcash.</p>
+<?php endif ?>
