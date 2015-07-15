@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <Fastcash_Pagamento>
+        <Miziagui_Fastcash>
             <active>true</active>
             <codePool>local</codePool>
             <depends>
                 <Mage_Payment />
             </depends>
-        </Fastcash_Pagamento>
+        </Miziagui_Fastcash>
     </modules>
 </config>
