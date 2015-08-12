@@ -46,12 +46,35 @@
                         <security_key translate="label">
                             <label>Chave de Segurança</label>
                             <frontend_type>text</frontend_type>
-                            <backend_model>adminhtml/system_config_backend_encrypted</backend_model>
                             <sort_order>30</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>0</show_in_store>
                         </security_key>	
+                        <online_credit_key translate="label">
+                            <label>Online Credit Key</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>32</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </online_credit_key>
+                        <credit_consult_key translate="label">
+                            <label>Credit Consult Key</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>33</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </credit_consult_key>
+                        <cancelation_key translate="label">
+                            <label>Cancelation Key</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>34</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </cancelation_key>             
                         <!--ambiente translate="label">
                             <label>Ambiente</label>
                             <frontend_type>select</frontend_type>
@@ -92,7 +115,8 @@
                             <show_in_store>1</show_in_store>
                         </active>
                         <title translate="label">
-                            <label>Fastcash Pagamento</label>
+                            <label>Título</label>
+                            <config_path>payment/fastcash_payment/title</config_path>
                             <frontend_type>text</frontend_type>
                             <sort_order>10</sort_order>
                             <show_in_default>1</show_in_default>
