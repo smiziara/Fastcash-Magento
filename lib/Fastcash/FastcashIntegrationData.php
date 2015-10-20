@@ -6,22 +6,22 @@ namespace Fastcash
         /**
         *   Your Integration ID with Fastcash.
         */
-        const Pid = 115;
+        const Pid = 110;
 
         /**
         *   The Online Credit function key for MD5 integrity signature.
         */
-        const OnlineCreditKey = "J19112xjtFpJfSiucevnNiDZNeWmTSmJoxRdQavJJARCDazwLlCssQojVOIzTCoZ";
+        const OnlineCreditKey = "219062LSZFZhkJfvIFplUEphaMSdiVMDUDFuVskDYtCpgMwXXdVLIGzJxEpKMvlL";
 
         /**
         *   The Credit Consult function key for MD5 integrity signature.
         */
-        const CreditConsultKey = "J19112xjtFpJfSiucevnNiDZNeWmTSmJoxRdQavJJARCDazwLlCssQojVOIzTCoZ";
+        const CreditConsultKey = "219063LSZFZhkJfvIFplUEphaMSdiVMDUDFuVskDYtCpgMwXXdVLIGzJxEpKMvlL";
 
         /**
         *   The Cancelation function key for MD5 integrity signature.
         */
-        const CancelationKey = "J19112xjtFpJfSiucevnNiDZNeWmTSmJoxRdQavJJARCDazwLlCssQojVOIzTCoZ";
+        const CancelationKey = "219064LSZFZhkJfvIFplUEphaMSdiVMDUDFuVskDYtCpgMwXXdVLIGzJxEpKMvlL";
 
         /**
         *   The Dynamic Transaction function key for DataPush xml integrity signature.
