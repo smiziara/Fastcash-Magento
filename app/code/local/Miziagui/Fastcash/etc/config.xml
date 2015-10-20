@@ -65,16 +65,7 @@
                     </fastcash_order_link>
                 </observers>
             </controller_action_layout_generate_blocks_after>           
-            <admin_system_config_changed_section_fastcash>
-                <observers>
-                    <fastcash_discount>
-                        <type>singleton</type>
-                        <class>fastcash/observer</class>
-                        <method>fastcashDiscount</method>
-                    </fastcash_discount>
-                </observers>
-            </admin_system_config_changed_section_fastcash>            
-        </events>      
+        </events>
     </global>
     <adminhtml>
         <layout>

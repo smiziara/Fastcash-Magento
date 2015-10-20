@@ -6,9 +6,9 @@ class Miziagui_Fastcash_Helper_Payment extends Mage_Core_Helper_Abstract
     public $fcOrder;
     
     public function loadOrder($id){
-        $fastcash = Mage::getModel('fastcash/order')->load($id);
+        $fastcash = Mage::getModel('fastcash/order')->load($id,'order_id');
         if($fastcash->hasData()){
-            $this->order = Mage::getModel('sales/order')->load($fastcash->getOrderId());
+            $this->order = Mage::getModel('sales/order')->load($id);
             $this->fcOrder = $fastcash;
         }else{
             return false;
@@ -57,7 +57,7 @@ class Miziagui_Fastcash_Helper_Payment extends Mage_Core_Helper_Abstract
         $cpf = $this->getOrder()->getCustomerTaxvat();
         if(!$cpf){
             $customer = Mage::getModel('customer/customer')->load($this->getOrder()->getCustomerId());
-            $customerCpfs = explode(",", Mage::getStoreConfig('fastcash/auth/cpf'));
+            $customerCpfs = explode(",", Mage::getStoreConfig('fastcash/fastcash_payment/cpf'));
             $cpf = null;
 
             foreach ($customerCpfs as $customerCpf) {

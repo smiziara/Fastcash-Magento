@@ -46,6 +46,7 @@
                         <security_key translate="label">
                             <label>Chave de Segurança</label>
                             <frontend_type>text</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_encrypted</backend_model>
                             <sort_order>30</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -54,47 +55,27 @@
                         <online_credit_key translate="label">
                             <label>Online Credit Key</label>
                             <frontend_type>text</frontend_type>
-                            <sort_order>32</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>0</show_in_store>
-                        </online_credit_key>
-                        <credit_consult_key translate="label">
-                            <label>Credit Consult Key</label>
-                            <frontend_type>text</frontend_type>
-                            <sort_order>33</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>0</show_in_store>
-                        </credit_consult_key>
-                        <cancelation_key translate="label">
-                            <label>Cancelation Key</label>
-                            <frontend_type>text</frontend_type>
-                            <sort_order>34</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>0</show_in_store>
-                        </cancelation_key>             
-                        <!--ambiente translate="label">
-                            <label>Ambiente</label>
-                            <frontend_type>select</frontend_type>
-                            <source_model>fastcash/environment</source_model>
-                            <config_path>payment/fastcash_auth/environment</config_path>
-                            <sort_order>50</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>0</show_in_store>
-                        </ambiente-->
-                        <cpf translate="label">
-                            <label>Campo de cpf</label>
-                            <frontend_type>text</frontend_type>
                             <sort_order>40</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>0</show_in_store>
-                            <comment><![CDATA[Nome do campo de cpf do cliente na loja, em ordem de prioridade, separados por vírgula. Ex: "taxvat,cpf,cnpj".]]>
-                            </comment>
-                        </cpf>                        
+                        </online_credit_key> 
+                        <credit_consult_key translate="label">
+                            <label>Credit Consult Key</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </credit_consult_key> 
+                        <cancelation_key translate="label">
+                            <label>Cancelation Key</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </cancelation_key>                        
                     </fields>
                 </auth>
                    
@@ -115,14 +96,21 @@
                             <show_in_store>1</show_in_store>
                         </active>
                         <title translate="label">
-                            <label>Título</label>
-                            <config_path>payment/fastcash_payment/title</config_path>
+                            <label>Fastcash Pagamento</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>10</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </title>
+                        <text translate="label">
+                            <label>Checkout Text</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </text>                        
                         <methods translate="label">
                             <label>Métodos de Pagamento</label>
                             <frontend_type>multiselect</frontend_type>
@@ -132,15 +120,25 @@
                                         É obrigatório que um método seja escolhido para que o fastcash seja habilitado no checkout
                                 ]]>
                             </comment>                            
-                            <sort_order>20</sort_order>
+                            <sort_order>50</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>0</show_in_store>
-                        </methods>    
+                        </methods> 
+                        <cpf translate="label">
+                            <label>Campo de cpf</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>55</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment><![CDATA[Nome do campo de cpf do cliente na loja, em ordem de prioridade, separados por vírgula. Ex: "taxvat,cpf,cnpj".]]>
+                            </comment>
+                        </cpf>                         
                         <discount translate="label">
                             <label>% Desconto</label>
                             <frontend_type>text</frontend_type>
-                            <sort_order>30</sort_order>
+                            <sort_order>60</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>0</show_in_store>
@@ -153,7 +151,7 @@
                         <sort_order translate="label">
                             <label>Ordem de sorteio</label>
                             <frontend_type>text</frontend_type>
-                            <sort_order>40</sort_order>
+                            <sort_order>70</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>                            
                             <show_in_store>1</show_in_store>
